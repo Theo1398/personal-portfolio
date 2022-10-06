@@ -1,0 +1,272 @@
+/* 
+    colors
+    green #031209
+    gold #CB8E00
+    white #FFFCF4
+    light brown #DDC7BE
+    red #754043
+
+    fonts
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    projects background
+    background: rgb(13,89,45);
+    background: radial-gradient(circle, rgba(13,89,45,1) 0%, rgba(3,18,9,1) 100%);
+*/
+
+:root {
+    --prim: #FFFCF4;
+    --sec: #031209;
+    --ter: #cb8e00;
+    --pic: #ddc7be;
+    --font: #754043;
+    --primfont: 'Roboto Condensed', sans-serif;
+    --secfont: 'Amatic SC', cursive;
+}
+
+/* 
+    header
+*/
+
+.top-header {
+    padding: 20px 0;
+    /* background-color: var(--sec); */
+    background: rgb(13,89,45);
+    background: linear-gradient(180deg, rgba(13,89,45,1) 0%, rgba(8,51,26,1) 50%, rgba(3,18,9,1) 100%);
+}
+
+.logo {
+    padding-bottom: 4px;
+    width: 54px;
+    height: 54px;
+    background-color: var(--ter);
+    border-radius: 50%;
+    position: relative;
+}
+
+.desktop {
+    margin-left: 10px;
+    color: var(--prim);
+    font-family: var(--secfont);
+    font-size: 50px;
+    position: absolute;
+    top: 16px;
+}
+
+.mobile {
+    color: var(--ter);
+    font-family: var(--secfont);
+    font-size: 75px;
+}
+
+.socials {
+    margin-top: 12px;
+}
+
+.socials a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: var(--prim);
+}
+
+.socials a:hover {
+    color: var(--ter);
+    transition: 0.8s;
+}
+
+.bottom-header {
+    padding: 10px 0;
+    background-color: var(--prim);
+}
+
+.navigation a {
+    color: var(--font);
+    font-family: var(--primfont);
+    font-size: 20px;
+}
+
+.navigation a:hover {
+    color: var(--ter);
+    transition: 0.8s;
+}
+
+.decor {
+    padding-bottom: 20px;
+}
+
+.line1 {
+    margin-top: 4px;
+    width: 130px;
+    height: 2px;
+    background-color: var(--ter);
+}
+
+.dot {
+    margin: 0 12px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--ter);
+    border-radius: 50%;
+}
+
+.line2 {
+    margin-top: 4px;
+    width: 130px;
+    height: 2px;
+    background-color: var(--ter);
+}
+
+
+/* 
+    main home
+*/
+
+.main-home {
+    padding-top: 50px;
+    padding-bottom: 160px;
+    background-color: var(--prim);
+}
+
+.first-name {
+    margin: 0;
+    margin-top: calc(1px + (100 - 1) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--ter);
+    font-family: var(--primfont);
+    font-size: calc(50px + (100 - 50) * ((100vw - 300px) / (1600 - 300)));
+    position: relative;
+    top: 30px;
+}
+
+.last-name {
+    color: var(--sec);
+    font-family: var(--primfont);
+    font-size: calc(86px + (174 - 86) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.headshot {
+    width: calc(210px + (420 - 210) * ((100vw - 300px) / (1600 - 300)));
+    height: calc(315px + (630 - 315) * ((100vw - 300px) / (1600 - 300)));
+    /* border-top: 40px solid var(--pic);
+    border-left: 40px solid var(--pic);
+    border-bottom: 10px solid var(--pic);
+    border-right: 10px solid var(--pic); */
+}
+
+.pic-background {
+    width: calc(200px + (410 - 200) * ((100vw - 300px) / (1600 - 300)));
+    height: calc(305px + (620 - 305) * ((100vw - 300px) / (1600 - 300)));
+    border-top: 60px solid var(--pic);
+    border-left: 60px solid var(--pic);
+}
+
+
+/* 
+    main about
+*/
+
+.main-about {
+    padding: 50px 0;
+    border-top: 4px solid var(--sec);
+    background-image: url(../media/forest2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.about-circle {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(300px + (600 - 300) * ((100vw - 300px) / (1600 - 300)));
+    height: calc(300px + (600 - 300) * ((100vw - 300px) / (1600 - 300)));
+    background-color: var(--prim);
+    opacity: 90%;
+    border-radius: 50%;
+}
+
+.about-title {
+    padding-top: 20px;
+    font-family: var(--primfont);
+    color: var(--font);
+}
+
+.about-text {
+    padding-top: 20px;
+    margin: 0 64px;
+    font-family: var(--primfont);
+    font-size: calc(10px + (24 - 10) * ((100vw - 300px) / (1600 - 300)));
+    color: var(--font);
+}
+
+.about-text a {
+    font-family: var(--primfont);
+    color: var(--font);
+}
+
+.about-text a:hover {
+    color: var(--ter);
+    transition: 0.8s;
+}
+
+
+/* 
+    main projects
+*/
+
+.main-projects {
+    padding: 20px 0;
+    background: rgb(13,89,45);
+    background: radial-gradient(circle, rgba(13,89,45,1) 0%, rgba(3,18,9,1) 100%);
+}
+
+.label h5 {
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    font-size: 25px;
+    background-color: var(--prim);
+    border-radius: 8px;
+    font-family: var(--primfont);
+    color: var(--sec);
+}
+
+.label h5:hover {
+    color: var(--ter);
+    transition: 0.8s;
+}
+
+.mobile-projects {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--prim);
+    color: var(--font);
+    font-family: var(--primfont);
+}
+
+.mobile-projects a {
+    color: var(--font);
+    font-family: var(--primfont);
+}
+
+/* 
+    footer
+*/
+
+.footer {
+    padding: 20px 0;
+    background-color: var(--prim);
+    border-top: 4px solid var(--sec);
+}
+
+.colophon {
+    font-family: var(--primfont);
+    color: var(--font);
+}
+
+.phone {
+    font-family: var(--primfont);
+    color: var(--font);
+}
